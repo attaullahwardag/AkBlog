@@ -12,8 +12,19 @@
     <header class="header">
         <div class="top-header">
             <div class="logo-section">
-                <h1>AkExplains</h1>
-                <p class="meta-entries-text">Just another WordPress site</p>
+            <?php
+                $custom_logo_id = get_theme_mod( 'custom_logo' );
+                $logo = wp_get_attachment_image_src( $custom_logo_id , 'full' );
+                 
+                if ( has_custom_logo() ) {
+                    echo '<img src="' . esc_url( $logo[0] ) . '" alt="' . get_bloginfo( 'name' ) . '">';
+                } else {
+            ?>
+                <h1><?php echo get_bloginfo( 'name' ); ?></h1>
+                <p class="meta-entries-text"><?php echo get_bloginfo( 'description' ); ?></p>
+            <?php
+                }
+            ?>      
             </div>
             <div class="navicon-box">
                 <button onclick="showNav()"> <i class="fas fa-bars"></i> </button>

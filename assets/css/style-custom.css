@@ -108,6 +108,13 @@ body{
 .post-content > img{
     width: 100%;
 }
+
+
+
+.post-categories li a{
+    text-decoration: none;
+    color:dimgray;
+}
 /* Side Bar widget section*/
 .sidebar-widget-box{
     margin: 20px 0;
