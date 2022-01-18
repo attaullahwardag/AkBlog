@@ -1,0 +1,22 @@
+
+.post-title{
+    font-size: 30px;
+    font-weight: 300;
+    line-height: 1.2em;
+    color:#1e73be;
+}
+.meta-entries-text{
+    font-size: 85%;
+    margin: 0;
+    color:#595959;
+    text-decoration: none;
+}
+.meta-entries-text:hover{
+    color:#1e73be;
+}
+.disply-block{
+    display: block;
+}
+.text-center{
+    text-align: center;
+}
