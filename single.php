@@ -15,8 +15,9 @@ the_post();
                 <div class="title">
                     <h1 class="post-title"><?php the_title(); ?></h1>
                     <div class="meta-entries">
-                        <span> <a  class="meta-entries-text" href="#"><?php echo get_the_date(); ?></a> </span>
-                        <span> <a  class="meta-entries-text" href="#"> by <?php echo get_the_author(); ?></a> </span>
+                        <div> <i class=" fa fa-user" ></i> <a  class="meta-entries-text" href="#"><?php the_author( ); ?></a> </div>
+                        <div> <i class="fa fa-calendar" aria-hidden="true"></i> <a  class="meta-entries-text" href="#"><?php the_date( ); ?></a> </div>
+                        <div class="meta-catagory"> <i class="fas fa-calendar"></i> <?php the_category(); ?> </div>
                     </div>
                 </div>
                 <div class="post-content">
@@ -25,10 +26,6 @@ the_post();
                             <?php the_content(); ?>
                         </p>
                     </div>
-                </div>
-                <div class="meta-entries">
-                    <?php the_category(); ?>
-                    <i class="fas fa-comments"></i> Leave a Comment
                 </div>
             </div>
             <div class="comments-box">

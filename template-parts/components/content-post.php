@@ -10,24 +10,20 @@
         <div class="title">
             <h1 class="post-title"><?php the_title( ); ?></h1>
             <div class="meta-entries">
-                <span> <a  class="meta-entries-text" href="#"><?php the_date( ); ?></a> </span>
-                <span> <a  class="meta-entries-text" href="#"> by <?php the_author( ); ?></a> </span>
+                <div> <i class=" fa fa-user" ></i> <a  class="meta-entries-text" href="#"><?php the_author( ); ?></a> </div>
+                <div> <i class="fa fa-calendar" aria-hidden="true"></i> <a  class="meta-entries-text" href="#"><?php the_date( ); ?></a> </div>
+                <div class="meta-catagory"> <i class="fas fa-calendar"></i> <?php the_category(); ?> </div>
             </div>
         </div>
         <div class="post-content blogpg">
             <div class="post-text">
                 <p>
-                    <?php the_excerpt( ); ?>
+                    <?php the_excerpt(); ?>
                 </p>
-                <a href="<?php permalink_link();  ?>"> Read more..</a>
             </div>
             <div class="post-thumbnail">
-                <?php the_post_thumbnail(array(300,300) ); ?>
+                <a href="<?php the_permalink( ); ?>"><?php the_post_thumbnail(array(300,300) ); ?></a>
             </div>
-        </div>
-        <div class="meta-entries">
-             <?php the_category(); ?>
-            <i class="fas fa-comments"></i> Leave a Comment
         </div>
     </div>
 <?php endwhile; ?>

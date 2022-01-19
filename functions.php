@@ -46,4 +46,9 @@ if ( ! function_exists( 'mytheme_register_nav_menu' ) ) {
     
     add_action( 'after_setup_theme', 'themename_custom_logo_setup' );
 
+
+    function wpdocs_excerpt_more( $more ) {
+        return '<a href="'.get_the_permalink().'" rel="nofollow"> Read More &#8594; </a>';
+    }
+    add_filter( 'excerpt_more', 'wpdocs_excerpt_more' );
 ?>

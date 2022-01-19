@@ -8,6 +8,9 @@ body{
     font-family: 'Poppins', sans-serif;
     background-color: #efefef;
 }
+a{
+   color: #2196f3;
+}
 .top-header{
     display: flex;
     width: 90%;
@@ -40,7 +43,9 @@ body{
     background-color: #ffffff;
 }
 
-/* Nav bar style */
+/***************************************************
+                  Nav Bar style
+****************************************************/
 .menu-header-menu-container{
     background-color: rgb(16, 16, 17);
 }
@@ -83,9 +88,9 @@ body{
 .current_page_item{
     background-color: indianred;
 }
-
-
-/* Main Content style starts here*/
+/***************************************************
+                Main Content style
+****************************************************/
 .main{
     width: 90vw;
     margin: auto;
@@ -104,6 +109,9 @@ body{
 .sidebar{
     flex-basis: 25%;
 }
+/***************************************************
+                    Post style
+****************************************************/
 .post-content{
     padding: 20px 0;
 }
@@ -116,6 +124,12 @@ body{
     font-size: 1 em;
     font-weight: 300;
 }
+.post-text a{
+    text-decoration: none;
+    display: inline-block;
+    padding: 5px;
+    margin-left: 5px;
+}
 .post-text h1{
     font-size: 16px;
     font-weight: 600;
@@ -125,9 +139,6 @@ body{
     font-size: 15px;
     font-weight: 600;
     margin: 20px 0 7px 0;
-}
-.post-text p{
-    margin: 0 0 10px 0;
 }
 .post-text > ul{
     margin-left: 40px;
@@ -141,8 +152,39 @@ body{
 .post-content > img{
     width: 100%;
 }
+/***************************************************
+        Post Meata data section style
+****************************************************/
 
-/******** comments from design **********/
+.meta-entries{
+    display: flex;
+    flex-direction: row;
+    color: gray;
+    margin:10px 0;
+}
+.meta-entries div{
+    margin: 0 10px;
+}
+.meta-catagory{
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+}
+.meta-catagory i{
+    display: block;
+    margin-top: 4px;
+    margin-right: 5px;
+}
+.post-categories li{
+    list-style: none;
+}
+.post-categories li a{
+    text-decoration: none;
+    color:dimgray;
+}
+/***************************************************
+            Comments section style
+****************************************************/
 .comments-box{
     margin: 20px 0;
     padding: 25px;
@@ -208,7 +250,7 @@ body{
 
 
 /*=====================================
- Comment Template CSS
+        Comment Form CSS
 ========================================*/
 
 .comment-respond {
@@ -251,19 +293,6 @@ body{
 .comment-form input[type=submit] {
     width: auto;
 }
-
-/******** comments from design **********/
-
-
-
-
-.post-categories li{
-    list-style: none;
-}
-.post-categories li a{
-    text-decoration: none;
-    color:dimgray;
-}
 /* Side Bar widget section*/
 .sidebar-widget-box{
     margin: 20px 0;
@@ -277,6 +306,9 @@ body{
     background-color: rgb(17, 16, 16);
     color:#fff;
 }
+/***************************************************
+        Media Query for small divices style
+****************************************************/
 
 @media only screen and (max-width: 973px) {
    
