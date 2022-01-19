@@ -1,14 +1,13 @@
 <?php get_header();?>
 
-<section class="main">
+    <section class="main">
         <div class="container">
-
+            <div class="post-box">
+                <h1> <?php wp_title(); ?> </h1>
+            </div>
         </div>
         <aside class="sidebar">
-            <div class="sidebar-widget-box">   
-            </div>
-            <div class="sidebar-widget-box">   
-            </div>
+            <?php get_sidebar(); ?>
         </aside>
     </section>
 

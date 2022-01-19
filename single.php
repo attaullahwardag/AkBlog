@@ -17,7 +17,7 @@ the_post();
                     <div class="meta-entries">
                         <div> <i class=" fa fa-user" ></i> <a  class="meta-entries-text" href="#"><?php the_author( ); ?></a> </div>
                         <div> <i class="fa fa-calendar" aria-hidden="true"></i> <a  class="meta-entries-text" href="#"><?php the_date( ); ?></a> </div>
-                        <div class="meta-catagory"> <i class="fas fa-calendar"></i> <?php the_category(); ?> </div>
+                        <div class="meta-catagory"> <i class="fas fa-tags"></i> <?php the_category(); ?> </div>
                     </div>
                 </div>
                 <div class="post-content">
@@ -33,10 +33,7 @@ the_post();
             </div>
         </div>
         <aside class="sidebar">
-            <div class="sidebar-widget-box">   
-            </div>
-            <div class="sidebar-widget-box">   
-            </div>
+            <?php get_sidebar(); ?>
         </aside>
     </section>
   

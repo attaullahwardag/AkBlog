@@ -98,7 +98,7 @@ a{
     justify-content: space-between;
 }
 .container{
-    flex-basis: 73%;
+    flex-basis: 70%;
 }
 .post-box{
     margin: 20px 0;
@@ -107,7 +107,7 @@ a{
 }
 
 .sidebar{
-    flex-basis: 25%;
+    flex-basis: 28%;
 }
 /***************************************************
                     Post style
@@ -293,11 +293,43 @@ a{
 .comment-form input[type=submit] {
     width: auto;
 }
-/* Side Bar widget section*/
+/***************************************************
+             Side Bar widget section                
+****************************************************/
 .sidebar-widget-box{
     margin: 20px 0;
     background-color: #fff;
-    height: 400px;
+}
+.widget{
+    list-style: none;
+    color:rgb(29, 28, 28);
+    font-size: 14px;
+    font-weight: 300;
+    padding: 50px 20px 10px 20px;
+}
+.widgettitle, .wp-block-search__label{
+    font-size: 30px;
+    font-weight: 300;
+    line-height: 1.2em;
+    color: #1e73be;
+}
+.wp-block-search__inside-wrapper{
+    margin-top: 10px;
+}
+.wp-block-search__input{
+    height: 40px;
+    padding:0 20px;
+}
+.widget ul li {
+    list-style: none;
+    margin: 10px 0px;
+    border-bottom: .4px dotted grey;
+}
+.widget ul li a{
+    text-decoration: none;
+    color:rgb(29, 28, 28);
+    font-size: 14px;
+    font-weight: 300;
 }
 
 /* Footer section */

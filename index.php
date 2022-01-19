@@ -5,10 +5,7 @@
             <?php get_template_part( 'template-parts/components/content-post' ); ?>
         </div>
         <aside class="sidebar">
-            <div class="sidebar-widget-box">   
-            </div>
-            <div class="sidebar-widget-box">   
-            </div>
+            <?php get_sidebar( ); ?>
         </aside>
     </section>
 

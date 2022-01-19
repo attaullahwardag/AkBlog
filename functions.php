@@ -51,4 +51,11 @@ if ( ! function_exists( 'mytheme_register_nav_menu' ) ) {
         return '<a href="'.get_the_permalink().'" rel="nofollow"> Read More &#8594; </a>';
     }
     add_filter( 'excerpt_more', 'wpdocs_excerpt_more' );
+
+    // Register sidebar
+    register_sidebar([
+        'name'=>'Sidebar Location',
+        'id'=> 'sidebar'
+    ])
+
 ?>
