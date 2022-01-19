@@ -22,7 +22,7 @@
                 <a href="<?php permalink_link();  ?>"> Read more..</a>
             </div>
             <div class="post-thumbnail">
-                <img class="post-img" src="images/img2.jpeg" alt="">
+                <?php the_post_thumbnail(array(300,300) ); ?>
             </div>
         </div>
         <div class="meta-entries">

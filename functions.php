@@ -27,7 +27,8 @@ if ( ! function_exists( 'mytheme_register_nav_menu' ) ) {
     }
     add_action( 'after_setup_theme', 'mytheme_register_nav_menu', 0 );
 }
-
+// Post-thumbnail
+    add_theme_support('post-thumbnails' );
 // Custom logo
 
     function themename_custom_logo_setup() {

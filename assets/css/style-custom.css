@@ -18,6 +18,10 @@ body{
     flex-basis: 50%;
     margin:auto;
 }
+.logo-section a{
+    text-decoration: none;
+    color: black;
+}
 .navicon-box{
     flex-basis: 50%;
 }
@@ -76,6 +80,9 @@ body{
 .menu-item-has-children:hover > .sub-menu{
     display: block;
 }
+.current_page_item{
+    background-color: indianred;
+}
 
 
 /* Main Content style starts here*/
@@ -93,6 +100,7 @@ body{
     padding: 25px;
     background-color: #fff;
 }
+
 .sidebar{
     flex-basis: 25%;
 }
@@ -101,16 +109,157 @@ body{
 }
 .blogpg{
     display: flex;
+    justify-content: space-around;
+}
+.post-text{
+    flex-basis: 60%;
+    font-size: 1 em;
+    font-weight: 300;
+}
+.post-text h1{
+    font-size: 16px;
+    font-weight: 600;
+    margin: 20px 0 7px 0;
+}
+.post-text h2{
+    font-size: 15px;
+    font-weight: 600;
+    margin: 20px 0 7px 0;
+}
+.post-text p{
+    margin: 0 0 10px 0;
+}
+.post-text > ul{
+    margin-left: 40px;
+}
+.post-thumbnail{
+    flex-basis: 25%;
 }
 .post-thumbnail > img{
-    width: 100%;
+    border-radius: 3px;
 }
 .post-content > img{
     width: 100%;
 }
 
+/******** comments from design **********/
+.comments-box{
+    margin: 20px 0;
+    padding: 25px;
+    background-color: #fff;
+}
+.comments-box h3 {
+    font-size: 14px;
+    font-weight: 400;
+    margin: 5px 0 10px 0;
+}
+.comment-body{
+    position: relative;
+    margin: 30px 0;
+
+}
+.comment-body p{
+    top:30px;
+    font-size: 13px;
+    left: 85px;
+}
+.commentlist{
+    list-style: none;
+}
+.comment-author img {
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+}
+.says{
+    display: none;
+}
+.fn{
+    position: absolute;
+    left: 85px;
+}
+.fn a{
+    text-decoration: none;
+    font-style:normal;
+    color: indianred;
+    font-size: 16px;
+    font-weight: 600;
+}
+.comment-meta{
+    position: absolute;
+    top:30px;
+    left: 85px;
+}
+.comment-meta a{
+    text-decoration: none;
+    font-style:normal;
+    color: indianred;
+    font-size: 14px;
+    font-weight: 300;
+}
+.reply a{
+    text-decoration: none;
+    color: indianred;
+}
+.children{
+    list-style: none;
+    margin-left: 40px;
+}
 
 
+/*=====================================
+ Comment Template CSS
+========================================*/
+
+.comment-respond {
+    margin-top: 50px;
+}
+
+.comment-notes {
+    font-size: 90%;
+    margin-bottom: 40px;
+}
+
+.comment-form label {
+    display: block;
+    margin-bottom: 10px;
+}
+.comment-form textarea {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 10px 15px;
+    font-size: 14px;
+    font-family: 'Poppins', sans-serif;
+}
+#email, #url, #author{
+    height: 40px;
+    padding: 0 15px;
+    font-size: 14px;
+    margin-bottom: 20px;
+    width: 100%;
+    border-radius: 0;
+    border:.3px solid rgb(32, 32, 32)
+}
+.form-submit > input{
+    padding: 10px 15px;
+    background-color: indianred;
+    color: ivory;
+    font-size: 16px;
+    border: none;
+}
+
+.comment-form input[type=submit] {
+    width: auto;
+}
+
+/******** comments from design **********/
+
+
+
+
+.post-categories li{
+    list-style: none;
+}
 .post-categories li a{
     text-decoration: none;
     color:dimgray;

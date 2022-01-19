@@ -20,7 +20,7 @@
                     echo '<img src="' . esc_url( $logo[0] ) . '" alt="' . get_bloginfo( 'name' ) . '">';
                 } else {
             ?>
-                <h1><?php echo get_bloginfo( 'name' ); ?></h1>
+                <h1> <a href="<?php echo get_site_url(); ?>"> <?php echo get_bloginfo( 'name' ); ?> </a></h1>
                 <p class="meta-entries-text"><?php echo get_bloginfo( 'description' ); ?></p>
             <?php
                 }

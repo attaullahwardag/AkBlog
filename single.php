@@ -19,20 +19,20 @@ the_post();
                         <span> <a  class="meta-entries-text" href="#"> by <?php echo get_the_author(); ?></a> </span>
                     </div>
                 </div>
-                <div class="post-content blogpg">
+                <div class="post-content">
                     <div class="post-text">
                         <p>
                             <?php the_content(); ?>
                         </p>
-                    </div>
-                    <div class="post-thumbnail">
-                        <img class="post-img" src="images/img2.jpeg" alt="">
                     </div>
                 </div>
                 <div class="meta-entries">
                     <?php the_category(); ?>
                     <i class="fas fa-comments"></i> Leave a Comment
                 </div>
+            </div>
+            <div class="comments-box">
+                <?php comments_template(); ?>
             </div>
         </div>
         <aside class="sidebar">
