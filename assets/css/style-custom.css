@@ -46,7 +46,7 @@ a{
 /***************************************************
                   Nav Bar style
 ****************************************************/
-.menu-header-menu-container{
+.header-menu {
     background-color: rgb(16, 16, 17);
 }
 .menu{
@@ -129,6 +129,17 @@ a{
     display: inline-block;
     padding: 5px;
     margin-left: 5px;
+    transition: 1s;
+}
+.post-text p a:hover{ 
+    color: lightcoral;
+    transform: translateX(3px);
+}
+.title > h1 {
+    font-size: 30px;
+    font-weight: 300;
+    line-height: 1.2em;
+    color: #1e73be;
 }
 .post-text h1{
     font-size: 16px;
@@ -180,7 +191,12 @@ a{
 }
 .post-categories li a{
     text-decoration: none;
+    font-size: 14px;
     color:dimgray;
+}
+.post-categories li a:hover{
+    color: #2196f3;
+
 }
 /***************************************************
             Comments section style
@@ -307,11 +323,17 @@ a{
     font-weight: 300;
     padding: 50px 20px 10px 20px;
 }
+.widget ul li a:hover{
+    color: lightcoral;
+}
 .widgettitle, .wp-block-search__label{
     font-size: 30px;
     font-weight: 300;
     line-height: 1.2em;
     color: #1e73be;
+}
+.wp-block-search__button{
+    background-color: lightcoral;
 }
 .wp-block-search__inside-wrapper{
     margin-top: 10px;

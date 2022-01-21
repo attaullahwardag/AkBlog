@@ -31,5 +31,7 @@
                 <button onclick="showNav()"> <i class="fas fa-bars"></i> </button>
             </div>
         </div>
-        <?php 	wp_nav_menu( array( 'theme_location' => 'primary_menu' ) ); ?>
+        <div class="header-menu">
+            <?php 	wp_nav_menu( array( 'theme_location' => 'primary_menu' ) ); ?>
+        </div>
     </header>

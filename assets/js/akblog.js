@@ -7,5 +7,4 @@ function showNav(){
        status.style.display = "none";
    }
 }
-    
-console.log('hi atta');
+
