@@ -8,9 +8,9 @@
 <!-- the rest of your theme's main loop -->
     <div class="post-box">
         <div class="title">
-            <h1 class="post-title"><?php the_title( ); ?></h1>
+            <h1 class="post-title"><?php the_title(); ?></h1>
             <div class="meta-entries">
-                <div> <i class=" fa fa-user" ></i> <a  class="meta-entries-text" href="#"><?php the_author( ); ?></a> </div>
+                <div class="link"><i class=" fa fa-user" ></i> <?php the_author_posts_link(); ?> </div>
                 <div> <i class="fa fa-calendar" aria-hidden="true"></i> <a  class="meta-entries-text" href="#"><?php the_date( ); ?></a> </div>
                 <div class="meta-catagory"> <i class="fas fa-tags"></i> <?php the_category(); ?> </div>
             </div>
