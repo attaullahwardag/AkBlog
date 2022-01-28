@@ -16,13 +16,13 @@
             </div>
         </div>
         <div class="post-content blogpg">
+            <div class="post-thumbnail">
+                <a href="<?php the_permalink( ); ?>"><?php the_post_thumbnail(array(300,300) ); ?></a>
+            </div>
             <div class="post-text">
                 <p>
                     <?php the_excerpt(); ?>
                 </p>
-            </div>
-            <div class="post-thumbnail">
-                <a href="<?php the_permalink( ); ?>"><?php the_post_thumbnail(array(300,300) ); ?></a>
             </div>
         </div>
     </div>

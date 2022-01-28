@@ -118,11 +118,12 @@ a{
 }
 .blogpg{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 .post-text{
-    flex-basis: 60%;
+    flex-basis: 70%;
     font-size: 1 em;
+    padding: 0 0 0 10px;
     font-weight: 300;
 }
 .post-text a{
@@ -156,10 +157,10 @@ a{
     margin-left: 40px;
 }
 .post-thumbnail{
-    flex-basis: 25%;
+    flex-basis: 20%;
 }
 .post-thumbnail > img{
-    border-radius: 3px;
+    width: 80%;
 }
 .post-content > img{
     width: 100%;
@@ -205,6 +206,29 @@ a{
     color: #2196f3;
 
 }
+
+
+nav.navigation.pagination {
+    margin: 20px auto;
+    padding: 20px 0;
+}
+.page-numbers {
+    background-color: rgb(16, 16, 17);
+    min-width: 30px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    display: inline-block;
+    color: white;
+    font-size: 14px;
+}
+.prev, .next{
+    padding: 0 5px;
+}
+.current{
+    background-color: lightcoral;
+}
+
 /***************************************************
             Comments section style
 ****************************************************/
@@ -378,8 +402,11 @@ a{
         display: block;
         margin: auto;
     }
+    #nav-container{
+        transition: .8s;
+    }
     #menu-header-menu{
-       display: none;
+        display: block;
     }
     .navicon-box button{
         float: right;
@@ -425,6 +452,59 @@ a{
     }
     .menu-item-has-children:hover > .sub-menu{
         display: block;
+    }
+    /***************************************************
+                 Post style small screen
+    ****************************************************/
+    .post-content{
+        padding: 20px 0;
+    }
+    .blogpg{
+        display: block;
+    }
+    .post-text{
+        width: 100%;
+        font-size: 1 em;
+        font-weight: 300;
+    }
+    .post-text a{
+        text-decoration: none;
+        display: inline-block;
+        padding: 5px;
+        margin-left: 5px;
+        transition: 1s;
+    }
+    .post-text p a:hover{ 
+        color: lightcoral;
+        transform: translateX(3px);
+    }
+    .title > h1 {
+        font-size: 30px;
+        font-weight: 300;
+        line-height: 1.2em;
+        color: #1e73be;
+    }
+    .post-text h1{
+        font-size: 16px;
+        font-weight: 600;
+        margin: 20px 0 7px 0;
+    }
+    .post-text h2{
+        font-size: 15px;
+        font-weight: 600;
+        margin: 20px 0 7px 0;
+    }
+    .post-text > ul{
+        margin-left: 40px;
+    }
+    .post-thumbnail{
+        flex-basis: 25%;
+    }
+    .post-thumbnail > img{
+        border-radius: 3px;
+    }
+    .post-content > img{
+        width: 100%;
     }
     
 }

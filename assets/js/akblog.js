@@ -1,10 +1,12 @@
 function showNav(){
-   var status = document.getElementById("menu-header-menu");
-   if(status.style.display == "none"){
-       status.style.display = "block";
-       console.log('not good');
+   var x = document.getElementById('nav-container');
+   console.log(x.style.display);
+   if(x.style.display === 'none'){
+       x.style.display = "block"
    }else{
-       status.style.display = "none";
+       x.style.display = "none";
    }
+
+ 
 }
 

@@ -28,10 +28,10 @@
             ?>      
             </div>
             <div class="navicon-box">
-                <button onclick="showNav()"> <i class="fas fa-bars"></i> </button>
+                <button onclick="showNav();"> <i class="fas fa-bars"></i> </button>
             </div>
         </div>
-        <div class="header-menu">
+        <div id="nav-container" class="header-menu">
             <?php 	wp_nav_menu( array( 'theme_location' => 'primary_menu' ) ); ?>
         </div>
     </header>
